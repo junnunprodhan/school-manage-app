@@ -1,0 +1,20 @@
+[package]
+name = "school-manage"
+version = "0.0.0"
+description = "Modern way for managing school."
+authors = ["mdmahikaishar <mahikaishar@gmail.com>"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.5", features = ["shell-open", "fs-all"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sqlx = { version = "0.7.3", features = ["runtime-tokio", "time", "sqlite"] }
+tokio = { version = "1.35.1", features = ["full"] }
+base64 = "0.21.7"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]

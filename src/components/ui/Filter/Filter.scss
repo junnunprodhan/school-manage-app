@@ -1,0 +1,23 @@
+.filter {
+  &-item {
+    @apply min-w-[10rem] flex flex-col items-start;
+
+    &-wrapper {
+      @apply w-full  h-9 px-2 flex items-center border-2 border-gray-700 shadow-md rounded-md
+        focus-within:bg-white/30 hover:border-white/30 ;
+    }
+
+    &-sm {
+      @apply min-w-[5rem];
+    }
+  }
+
+  &-label {
+    @apply mb-1 font-semibold text-sm select-none;
+  }
+
+  &-input,
+  &-select {
+    @apply flex-grow text-sm bg-transparent text-black border-none outline-none cursor-pointer placeholder:text-gray-500;
+  }
+}

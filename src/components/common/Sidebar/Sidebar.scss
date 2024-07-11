@@ -1,0 +1,73 @@
+.sidebar {
+  @apply h-full select-none;
+
+  &-container {
+    @apply h-full pb-4 
+    fixed top-[calc(3rem)] left-0 md:relative md:top-auto z-30
+    backdrop-blur-xl bg-white/30 shadow-lg transition-all duration-200;
+  }
+
+  &-overlay {
+    @apply md:hidden w-full h-full absolute top-0 left-0 z-20 cursor-default select-none;
+  }
+
+  &-show {
+    @apply w-60;
+  }
+  &-hide {
+    @apply w-0 md:w-60;
+  }
+
+  &-user {
+    @apply w-full px-2 py-2 flex items-center gap-2 bg-white/30 border-b-2 border-b-white/20 rounded-bl-md rounded-br-md cursor-pointer;
+
+    &-info {
+      @apply flex-grow flex flex-col;
+    }
+    &-name {
+      @apply text-xs font-semibold;
+    }
+    &-id {
+      @apply text-xs;
+    }
+  }
+
+  &-dropdown {
+    @apply m-2 h-max flex flex-col rounded-md overflow-hidden cursor-pointer transition-all;
+
+    &-head,
+    &-item {
+      @apply px-4 py-2 text-sm font-medium backdrop-blur-xl flex items-center gap-2 cursor-pointer transition-all;
+
+      svg {
+        @apply text-base;
+      }
+    }
+
+    &-head {
+      @apply bg-white/30 rounded-bl-md hover:bg-white/60;
+    }
+
+    &-item {
+      @apply px-3 py-2 bg-white/30 hover:bg-white/60;
+
+      &-active {
+        @apply bg-white/50;
+      }
+
+      &:last-child {
+        @apply rounded-bl-md;
+      }
+    }
+
+    &-content {
+      @apply pl-8 flex flex-col relative;
+
+      &-indicator {
+        @apply w-1 h-[calc(100%-.5rem)]
+          absolute top-1/2 left-4 -translate-x-1/2 -translate-y-1/2
+          bg-white/40 z-10 rounded-sm;
+      }
+    }
+  }
+}

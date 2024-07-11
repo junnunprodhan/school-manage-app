@@ -1,0 +1,31 @@
+.header {
+  @apply w-full h-12 sticky top-0 left-0 flex justify-between backdrop-blur-xl bg-white/30 border-b-2 border-b-white/20 z-10;
+
+  &-container {
+    @apply h-12 flex justify-between;
+  }
+
+  &-logo {
+    @apply flex items-center gap-2;
+
+    img {
+      @apply w-6 h-6 object-contain;
+    }
+
+    span {
+      @apply text-xl font-semibold;
+    }
+  }
+
+  &-section {
+    @apply flex items-center gap-2;
+  }
+
+  &-item {
+    @apply px-3 py-1 text-sm font-semibold rounded-md hover:bg-white/40;
+  }
+
+  &-btn {
+    @apply w-8 h-8 grid place-items-center text-2xl rounded-full hover:bg-white/40;
+  }
+}

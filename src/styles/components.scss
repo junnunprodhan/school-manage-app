@@ -1,0 +1,40 @@
+
+@layer components {
+  .btn {
+    @apply h-8 px-4 flex justify-center items-center text-sm font-semibold rounded-md select-none;
+
+    &-icon {
+      @apply w-8 h-8 grid place-items-center text-xl rounded-md select-none
+        hover:bg-white/20 hover:shadow-md;
+  
+      &-dark {
+        @apply hover:bg-black/20;
+      }
+    }
+  
+    &-responsive {
+      @apply w-8 h-8 flex justify-center items-center gap-1 rounded-md select-none
+        sm:w-auto sm:px-2 sm:justify-normal
+        hover:bg-white/60 hover:shadow-md;
+  
+      &-icon {
+        @apply text-xl;
+      }
+      &-text {
+        @apply hidden sm:block text-sm;
+      }
+    }
+  
+    &-transparent {
+      @apply bg-transparent hover:bg-white/60 hover:shadow-md;
+    }
+
+    &-danger {
+      @apply border-2 border-gray-700 hover:border-red-500 hover:bg-red-300 shadow-md;
+    }
+    &-success {
+      @apply border-2 border-gray-700 hover:border-green-500 hover:bg-green-300 shadow-md;
+    }
+  }
+}
+

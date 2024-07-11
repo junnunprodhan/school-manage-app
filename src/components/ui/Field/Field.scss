@@ -1,0 +1,88 @@
+
+.field {
+  @apply flex flex-col gap-2 cursor-pointer;
+
+  &-label {
+    @apply w-full px-1 text-sm font-semibold select-none;
+  }
+
+  &-wrapper {
+    @apply flex-grow h-12 px-4 flex border-2 border-gray-700 rounded-md shadow-md
+      focus-within:border-white/30 hover:border-white/30;
+  }
+
+  &-input,
+  &-select {
+    @apply flex-grow text-sm bg-transparent text-black border-none outline-none cursor-pointer
+      placeholder:text-gray-500;
+  }
+  
+  &-btn {
+    @apply w-full h-12 px-4 py-4 flex items-center justify-center  text-sm font-semibold text-gray-600 bg-transparent border-2 border-gray-700 shadow-md
+      rounded-md cursor-pointer select-none hover:bg-white/60;
+  }
+
+  // &-custom-select {
+  //   &-head {
+  //     cursor: pointer;
+  //   }
+
+  //   &-content {
+  //     width: 100%;
+  //     max-height: 10rem;
+  //     position: absolute;
+  //     top: calc(100% + 0.25rem);
+  //     left: 0;
+  //     z-index: 2;
+  //     background-color: var(--fieldBg);
+  //     border: 2px solid var(--fieldBorder);
+  //     border-radius: 0.5rem;
+  //     transition: height 200ms ease;
+  //     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  //   }
+
+  //   &-option {
+  //     padding: 0.5rem 1rem;
+  //     font-size: 0.9rem;
+  //     border-radius: 0.4rem;
+  //     cursor: pointer;
+
+  //     &:hover {
+  //       background-color: rgb(206, 206, 206);
+  //     }
+  //   }
+  // }
+
+  &-img {
+    @apply flex flex-col gap-2;
+
+    &-label {
+      @apply w-full px-1 text-sm font-semibold;
+    }
+
+    &-wrapper {
+      @apply w-full h-full grid place-items-center gap-4;
+    }
+
+    &-square {
+      @apply w-32 h-32 bg-transparent rounded-full;
+    }
+
+    &-video {
+      @apply w-full aspect-video bg-transparent rounded-md;
+    }
+
+    &-upload {
+      @apply flex flex-col items-center justify-center relative border-2 border-gray-700 shadow-md 
+        hover:border-white/30;
+
+      &-img {
+        @apply w-full h-full bg-transparent object-cover rounded-full;
+      }
+      
+      &-label {
+        @apply w-full h-full absolute text-xl grid place-items-center bg-white/30 rounded-full cursor-pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.table {
+  &-wrapper {
+    @apply w-full;
+  }
+
+  &-header {
+    @apply mb-2 flex items-center justify-end;
+  }
+
+  @apply w-full p-5 border-collapse bg-transparent cursor-default;
+
+
+  &-content {
+    @apply border-2 border-gray-700 rounded-md shadow-md overflow-hidden;
+  }
+
+  &-head,
+  &-row {
+    @apply border-b-2 border-b-gray-700;
+  }
+
+  &-head {
+    @apply backdrop-blur-xl bg-white/30 select-none;
+    
+    .table-col {
+      @apply h-12 text-sm font-semibold uppercase;
+    }
+  }
+
+  &-row {
+    @apply backdrop-blur-xl bg-white/10 hover:bg-white/20;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &-col {
+    @apply px-3 py-2 border-r-2 border-r-gray-700;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
