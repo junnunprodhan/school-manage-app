@@ -43,6 +43,7 @@ Very soon this features will be implemented in our app. Inshaallah.
 
 - Teacher/Parent/Student login.
 
+
 - Phone call, Send Email, Notification.
 
 
