@@ -1,4 +1,4 @@
-# School Manage
+# School Manage App
 
 ![Rust](https://img.shields.io/badge/Rust-DD3515?style=for-the-badge&logo=rust&logoColor=white)
 
