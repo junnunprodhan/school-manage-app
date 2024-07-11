@@ -46,7 +46,6 @@ Very soon this features will be implemented in our app. Inshaallah.
 - Phone call, Send Email, Notification.
 
 
-
 ## Roadmap
 
 This project is in its early stages, and there are many missing features that need implementation. Check the [Issues](https://github.com/mdmahikaishar/school-manage/issues) section for a list of features, enhancements, and bug fixes that are planned.
